@@ -1,0 +1,12 @@
+<div>
+    <ul *ngFor="let flight of flights let i = index">
+        <li> {{flight._id}}: {{flight.aname}} {{flight.tnumb}} {{flight.tname}} {{flight.trip}} {{flight.category}}
+            (index {{i}})
+
+            <button mat-button color="warn" (click)="onDelete(flight._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editFlight', flight._id]">UPDATE</button>
+
+        </li>
+    </ul>
+</div>
+

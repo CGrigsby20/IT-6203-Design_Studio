@@ -1,0 +1,50 @@
+<div class="container">
+
+    <h3> {{mode}}  Form </h3>
+        <h1>Proposed Destination Information</h1>
+
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+        <mat-form-field>
+            <input required matInput placeholder="Domestic or International:" id="intdom" [(ngModel)]=" intdom" name="intdom">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Proposed Country:" id="country" [(ngModel)]=" country" name="country">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Proposed State:" id="dstate" [(ngModel)]=" dstate" name="dstate">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Proposed City:" id="dcity" [(ngModel)]=" dcity" name="dcity">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Travelling Date:" id="tdate" [(ngModel)]=" tdate" name="tdate">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Return Date:" id="rdate" [(ngModel)]=" rdate" name="rdate">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+
+    </form>
+
+</div>

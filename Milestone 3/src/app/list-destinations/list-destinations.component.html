@@ -1,0 +1,13 @@
+<div>
+    <ul *ngFor="let destination of destinations let i = index">
+        <li> {{destination._id}}: {{destination.intdom}} {{destination.country}} {{destination.dstate}} {{destination.dcity}}
+            {{destination.tdate}} {{destination.rdate }}
+            (index {{i}})
+
+            <button mat-button color="warn" (click)="onDelete(destination._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editDestination', destination._id]">UPDATE</button>
+
+        </li>
+    </ul>
+</div>
+

@@ -1,0 +1,13 @@
+.container{
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 3px solid #d26c19;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.container mat-form-field{
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+}

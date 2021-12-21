@@ -1,0 +1,45 @@
+<div>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+        <span>Menu</span>
+    </button>
+
+    <mat-menu #menu="matMenu">
+
+        <!--*for Hotel Booking-->
+        <button mat-menu-item routerLink="/listHotelbookings">
+            <span id ='menu1'>List Hotelbookings</span>
+        </button>
+        <button mat-menu-item routerLink="/addHotelbookings">
+            <span>Add Hotelbooking</span>
+        </button>
+
+        <!--*for Car Rental-->
+        <button mat-menu-item routerLink="/listCarrentals">
+            <span id ='menu1'>List Carrentals</span>
+        </button>
+        <button mat-menu-item routerLink="/addCarrentals">
+            <span>Add Carrental</span>
+        </button>
+
+        <!--*for Destination-->
+        <button mat-menu-item routerLink="/listDestinations">
+            <span id ='menu1'>List Destinations</span>
+        </button>
+        <button mat-menu-item routerLink="/addDestinations">
+            <span>Add Destination</span>
+        </button>
+
+        <!--*for Flight-->
+        <button mat-menu-item routerLink="/listFlights">
+            <span id ='menu1'>List Flights</span>
+        </button>
+        <button mat-menu-item routerLink="/addFlights">
+            <span>Add Flight</span>
+        </button>
+
+    </mat-menu>
+
+</div>
+
+

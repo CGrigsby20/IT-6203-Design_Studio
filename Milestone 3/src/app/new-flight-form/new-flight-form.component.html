@@ -1,0 +1,44 @@
+<div class="container">
+
+    <h3> {{mode}}  Form </h3>
+        <h1>Flight Information</h1>
+
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+        <mat-form-field>
+            <input required matInput placeholder="Airline Name:" id="aname" [(ngModel)]=" aname" name="aname">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Number of travellers:" id="tnumb" [(ngModel)]=" tnumb" name="tnumb">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Name of Travellers:" id="tname" [(ngModel)]=" tname" name="tname">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="One way or Round Trip:" id="trip" [(ngModel)]=" trip" name="trip">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Travel Category:" id="category" [(ngModel)]=" category" name="category">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+
+    </form>
+
+</div>

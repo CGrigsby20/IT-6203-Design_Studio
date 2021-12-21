@@ -1,0 +1,12 @@
+<div>
+    <ul *ngFor="let hotelbooking of hotelbookings let i = index">
+        <li> {{hotelbooking._id}}: {{hotelbooking.name}} {{hotelbooking.rooms}} {{hotelbooking.indate}} {{hotelbooking.outdate}}
+            {{hotelbooking.street}} {{hotelbooking.zipcode }} {{hotelbooking.city}} {{hotelbooking.state}}
+            (index {{i}})
+
+            <button mat-button color="warn" (click)="onDelete(hotelbooking._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editHotelbooking', hotelbooking._id]">UPDATE</button>
+
+        </li>
+    </ul>
+</div>

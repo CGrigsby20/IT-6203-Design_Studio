@@ -1,0 +1,45 @@
+<div class="container">
+    <form [formGroup]="profileForm">
+
+        <h2>Proposed Destination Information</h2>
+        <label for="intDom">Domestic or International Trip: </label>
+        <select name='intDom' id='intDom' formControlName='intDom'>
+            <option value='Domestic'>Domestic</option>
+            <option value="International">International</option>
+        </select>
+        <p>Destination Information</p>
+        <hr>
+        <div formGroupName='destination'>
+            <label for='city'>City:</label>
+            <input id='city' type='text' formControlName='city'>
+
+            <label for='region'>State/Region/District:</label>
+            <input id='region' type="text" formControlName='region'>
+
+            <label for='country'>Country:</label>
+            <input id='country' type='country' formControlName='country'>
+        </div>
+
+        <p>Travel Date</p>
+        <hr>
+        <div formGroupName='dates'>
+            <label for='arrival'>Destination Arrival Date</label>
+            <input id='arrival' type="date" formControlName='arrival'>
+
+            <label for='departure'>Destination Departure Date</label>
+            <input id='departure' type="date" formControlName='departure'>
+        </div>
+    </form>
+    <hr>
+<p>Complete the form to enable button.</p>
+<button type="submit" [disabled]="!profileForm.valid">Submit</button>
+</div>
+
+
+<div class="footer">
+
+    <p class="toe">KSU Vacation Planning App Project 2021. For educational purpose only.</p>
+
+    <p class="toe">Please visit the KSU website for additional information<a
+
+            href="http://ccse.kennesaw.edu/it"> Click here</a></p>     

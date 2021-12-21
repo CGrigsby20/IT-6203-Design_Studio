@@ -1,0 +1,39 @@
+<div class="container">
+
+    <h3> {{mode}}  Form </h3>
+        <h1>Car Rental Information</h1>
+
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+        <mat-form-field>
+            <input required matInput placeholder="Pickup Location:" id="location" [(ngModel)]=" location" name="location">
+        </mat-form-field>
+
+        <pre></pre>        
+
+        <mat-form-field>
+            <input required matInput placeholder="Vehicle Type:" id="type" [(ngModel)]=" type" name="type">
+        </mat-form-field>
+        
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Pickup Date:" id="pdate" [(ngModel)]=" pdate" name="pdate">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Dropoff Date:" id="ddate" [(ngModel)]=" ddate" name="ddate">
+        </mat-form-field>       
+
+        <pre></pre>
+
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+
+    </form>
+
+</div>
+

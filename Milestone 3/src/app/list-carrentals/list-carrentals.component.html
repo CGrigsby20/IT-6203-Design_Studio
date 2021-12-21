@@ -1,0 +1,12 @@
+<div>
+    <ul *ngFor="let carrental of carrentals let i = index">
+        <li> {{carrental._id}}: {{carrental.location}} {{carrental.type}} {{carrental.pdate}} {{carrental.ddate}}
+            (index {{i}})
+
+            <button mat-button color="warn" (click)="onDelete(carrental._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editCarrental', carrental._id]">UPDATE</button>
+
+        </li>
+    </ul>
+</div>
+

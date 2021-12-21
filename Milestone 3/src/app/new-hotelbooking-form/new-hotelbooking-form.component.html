@@ -1,0 +1,62 @@
+<div class="container">
+
+    <h3> {{mode}}  Form </h3>
+        <h1>Hotel Booking Information</h1>
+
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+        <mat-form-field>
+            <input required matInput placeholder="Hotel Name:" id="name" [(ngModel)]=" name" name="name">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Proposed Check-in Date:" id="indate" [(ngModel)]=" indate" name="indate">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Proposed Check-out Date:" id="outdate" [(ngModel)]=" outdate" name="outdate">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Number of Rooms:" id="rooms" [(ngModel)]=" rooms" name="rooms">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Street:" id="street" [(ngModel)]=" street" name="street">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input required matInput placeholder="Zip Code:" id="zipcode" [(ngModel)]=" zipcode" name="zipcode">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input matInput placeholder="City:" id="city" [(ngModel)]=" city" name="city">
+        </mat-form-field>
+
+        <pre></pre>
+
+        <mat-form-field>
+            <input matInput placeholder="State:" id="state" [(ngModel)]=" state" name="state">
+        </mat-form-field>     
+
+        <pre></pre>
+
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+
+    </form>
+
+</div>
