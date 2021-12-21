@@ -1,0 +1,9 @@
+<div>
+    <ul *ngFor ="let capstone of capstone let i = index">
+    <li> {{capstone._id}}: {{capstone.cName}} {{capstone.cTitle}} {{capstone.cEmail}} {{capstone.cPhone}} {{capstone.oName}} {{capstone.oWebsite}} {{capstone.oStreet}} {{capstone.oZip}} {{capstone.oCity}} {{capstone.oState}} {{capstone.pTitle}} {{capstone.pDescription}} {{capstone.pSkills}} {{capstone.pDuties}} {{capstone.pBenefit}} {{capstone.pProvide}} (index {{i}}) 
+        <button mat-button (click)="onDelete(capstone._id)">DELETE</button>
+        <button mat-button color="accent" [routerLink]="['/editCapstone', capstone._id]">UPDATE</button>
+    </li>
+    </ul>
+</div>
+

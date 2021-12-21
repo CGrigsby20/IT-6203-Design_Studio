@@ -1,0 +1,68 @@
+
+<div>
+    <h3>{{mode}} Capstone Form</h3>
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+
+        <h3>Setion I - Company and Mentor Information</h3>
+        <h4>Contact Info</h4><hr>
+        <mat-form-field >
+            <input matInput placeholder="Contact Name" id="cName" [(ngModel)]="cName" name="cName" >
+        </mat-form-field>
+    <br>
+        <mat-form-field >
+            <input matInput placeholder="Contact Title" id="cTitle" [(ngModel)]="cTitle" name="cTitle" >
+        </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Contact Email" id="cEmail" [(ngModel)]="cEmail" name="cEmail" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Contact Phone" id="cPhone" [(ngModel)]="cPhone" name="cPhone" >
+    </mat-form-field>
+    <br>
+    <h4>Organization Info</h4><hr>
+    <mat-form-field >
+        <input matInput placeholder="Organization Name" id="oName" [(ngModel)]="oName" name="oName" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Organization Website" id="oWebsite" [(ngModel)]="oWebsite" name="oWebsite" >
+    </mat-form-field>
+    <h5>Organization Address</h5>
+    <mat-form-field >
+        <input matInput placeholder="Street" id="oStreet" [(ngModel)]="oStreet" name="oStreet" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Zip" id="oZip" [(ngModel)]="oZip" name="oZip" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="City" id="oCity" [(ngModel)]="oCity" name="oCity" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="State" id="oState" [(ngModel)]="oState" name="oState" >
+    </mat-form-field>
+
+<h3>Section II - Project for Which Students Will Participate</h3>
+<mat-form-field >
+        <input matInput placeholder="Project Title" id="pTitle" [(ngModel)]="pTitle" name="pTitle" >
+    </mat-form-field>
+    <br>
+    <mat-form-field >
+        <input matInput placeholder="Project Description" id="pDescription" [(ngModel)]="pDescription" name="pDescription" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Skills/Requirements Needed" id="pSkills" [(ngModel)]="pSkills" name="pSkills" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Duties" id="pDuties" [(ngModel)]="pDuties" name="pDuties" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="Benefits of Project" id="pBenefit" [(ngModel)]="pBenefit" name="pBenefit" >
+    </mat-form-field>
+    <mat-form-field >
+        <input matInput placeholder="What will company provde to students" id="pProvide" [(ngModel)]="pProvide" name="pProvide" >
+    </mat-form-field>
+        <p>
+            <button type="submit" mat-raised-button>Submit</button>
+        </p>
+    </form>
+    </div>
+                 
